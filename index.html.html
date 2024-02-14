@@ -1,0 +1,94 @@
+<!-- NOTE: USING OWN IMAGE URLs, AS THE IMAGE URLs IN THE GIVEN API ARE BROKEN -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+    <title>Marmeto Coding Assesment L2</title>
+
+</head>
+
+<body onload="pageOnLoad()">
+    <div class="grid">
+        <div class="left innergrid">
+            <div class="innertop">
+               <img id="main_img" src="https://m.media-amazon.com/images/I/61UYGonXdFL.jpg" width="100%"/>
+            </div>
+            <div class="innerbottom">
+                <div class="row">
+                    <div class="column">
+                <img onclick="updateMainImage(`https://m.media-amazon.com/images/I/61ZY+lfPgNL._AC_SL1200_.jpg`)" src="https://m.media-amazon.com/images/I/61ZY+lfPgNL._AC_SL1200_.jpg" width="30%"/>
+                <!--<hr>-->
+           </div>
+           <hr>
+            <div class="column">
+               <img onclick="updateMainImage(`https://m.media-amazon.com/images/I/61TXmdTJCJL._AC_SL1200_.jpg`)" src="https://m.media-amazon.com/images/I/61TXmdTJCJL._AC_SL1200_.jpg" width="20%"/>
+               <!--<hr>-->
+           </div>
+       </div>
+            <div class="row">
+           <div class="column">
+                <img onclick="updateMainImage(`https://m.media-amazon.com/images/I/61MWX3zyayL._AC_SL1200_.jpg`)" src="https://m.media-amazon.com/images/I/61MWX3zyayL._AC_SL1200_.jpg" width="30%"/></div>
+            <hr>
+            <div class="column">
+                <img onclick="updateMainImage(`https://m.media-amazon.com/images/I/61UYGonXdFL.jpg`)" src="https://m.media-amazon.com/images/I/61UYGonXdFL.jpg" width="20%"/></div>
+            </div>
+            </div>
+        </div>
+        <div class="right">
+
+            <p id="vendor" style="color:#D3D3D3">Marmeto</p>
+            <hr class="c1"/>
+            <h2 id="title">Embrace Sideboard</h2>
+            <hr class="c1"/>
+            <div style="display: flex; align-items: center;">
+                <h2 id="price" style="flex: 1" >$12999.00 </h2>
+                <h2 id="percent_off" style="color:red; flex: 1">35% Off</h2>
+            </div>
+            <h2 id="compare_at" style="color:#D3D3D3">
+            </h2>
+            <hr class="c1">
+            <p style="color:#D3D3D3">Choose a Color</p>
+            <div id="color_div_parent">
+                <div class="color_div" style="background-color: blue" onclick="updateMainImage(`https://m.media-amazon.com/images/I/61UYGonXdFL.jpg`)"></div>
+            </div>    
+
+            <hr class="c1">
+            <p style="color:#D3D3D3">Choose a Size</p>
+            <label class="size_label">
+                <input type="radio" name="Small" value="Small"/>Small
+            </label>
+            <label class="size_label">
+                <input type="radio" name="Medium" value="Medium" />Medium
+            </label>
+            <label class="size_label">
+                <input type="radio" name="Large" value="Large" />Large
+            </label>
+            <label class="size_label">
+                <input type="radio" name="XLarge" value="XLarge" />XLarge
+            </label>
+            <label class="size_label">
+                <input type="radio" name="XXLarge" value="XXLarge" />XXLarge
+            </label>
+        <hr class="c1"/>
+        <p></p>
+
+        <div>
+            <button onclick="increase()">+</button>
+            <input id=i&d type=number min=1  max=1000>
+            <button onclick="decrease()">-</button>
+            <button onclick="addToCart()" class="button add_cart_btn">Add To Cart</button>
+        </div>
+        <hr class="c1"/>
+       
+        <p id="description" style="color:#D3D3D3">
+        </p>
+    
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

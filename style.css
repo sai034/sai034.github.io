@@ -1,0 +1,87 @@
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(100px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  gap: 5px;
+}
+
+.left {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+  background-color: white;
+  display: grid;
+}
+
+.right {
+  background-color:white;
+  grid-column: 2 / 3;
+  grid-row: 1 / 5;
+}
+
+.innergrid {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: minmax(100px, 1fr);
+  gap: 5px;
+}
+
+.innertop {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: white;
+  display: grid;
+}
+
+.innerbottom {
+  grid-column: 1 / 2;
+  grid-row: 3/ 4;
+  background-color: white;
+  display: grid;
+}
+
+label
+{
+    background-color:#D3D3D3;
+}
+input 
+{
+    background-color:#D3D3D3;
+}
+.row {
+  display: flex;
+  border:1px solid;
+}
+
+.column {
+  flex: 40.33%;
+  padding: 10px;
+}
+hr.c1{
+    
+    border-color:#D3D3D3;
+}
+.button
+{
+    background-color:blue;
+    font-size: 20px;
+}
+
+.color_div{
+    width:30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.size_label {
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.add_cart_btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    width: 180px;
+}
